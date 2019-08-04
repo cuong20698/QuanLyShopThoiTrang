@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MyShop_MasterPage_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../css/mainWap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>  
+    <form id="form1" runat="server">
+    <div id="mainWap">
+        <div id="header">
+            <div id="logo">MyShop</div>
+            <div id="search">
+                <asp:TextBox ID="txtSearch" runat="server" placeholder="Tìm kiếm"></asp:TextBox>
+                <i class="fa fa-search"></i>
+            </div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">GIỚI THIỆU</a></li>
+                <li><a href="#">ÁO</a>
+                    <ul>
+                        <li><a href="#">ÁO SƠ MI</a></li>
+                        <li><a href="#">ÁO KIỂU</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ĐẦM</a>
+                    <ul>
+                        <li><a href="#">ĐẦM DẠO PHỐ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">QUẦN</a>
+                    <ul>
+                        <li><a href="#">QUẦN SORT</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CHÂN VÁY</a>
+                    <ul>
+                        <li><a href="#">VÁY NGẮN</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SET BỘ</a>
+                    <ul>
+                        <li><a href="#">DẠO PHỐ</a></li>
+                        <li><a href="#">PHỐI YẾM</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">TIN TỨC</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                main
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="clr"></div>
+        
+        <div id="footer">
+        </div>
+    </div>
+    </form>
+</body>
+</html>
