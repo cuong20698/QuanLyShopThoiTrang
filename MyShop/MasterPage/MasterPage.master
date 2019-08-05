@@ -7,61 +7,82 @@
     <title></title>
     <link href="../css/mainWap.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 </head>
-<body>  
+<body>
     <form id="form1" runat="server">
-    <div id="mainWap">
-        <div id="header">
-            <div id="logo">MyShop</div>
-            <div id="search">
-                <asp:TextBox ID="txtSearch" runat="server" placeholder="Tìm kiếm"></asp:TextBox>
-                <i class="fa fa-search"></i>
+        <div id="mainWap">
+            <div id="logout">
+                <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
+                <asp:Button ID="btnLogout" runat="server" Text="Đăng xuất" />
+            </div>
+            <div id="header">
+                <div id="logo">MyShop</div>
+                <div id="store">
+                    <a href="#"><i class="fa fa-cart-plus"></i>Giỏ hàng</a>
+                </div>
+                <div id="search">
+                    <asp:TextBox ID="txtSearch" runat="server" placeholder="Tìm kiếm"></asp:TextBox>
+                    <button id="btnSearch" type="submit" runat="server"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="GioiThieu.aspx">GIỚI THIỆU</a></li>
+                    <li><a>ÁO <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">ÁO SƠ MI</a></li>
+                            <li><a href="#">ÁO KIỂU</a></li>
+                        </ul>
+                    </li>
+                    <li><a>ĐẦM <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">ĐẦM DẠO PHỐ</a></li>
+                        </ul>
+                    </li>
+                    <li><a>QUẦN <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">QUẦN SORT</a></li>
+                        </ul>
+                    </li>
+                    <li><a>CHÂN VÁY <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">VÁY NGẮN</a></li>
+                        </ul>
+                    </li>
+                    <li><a>SET BỘ <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="#">DẠO PHỐ</a></li>
+                            <li><a href="#">PHỐI YẾM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">TIN TỨC</a></li>
+                    <li><a href="lienHe.aspx">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+            <div id="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <div id="divInfo" runat="server"></div>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="clr"></div>
+
+            <div id="footer">
+                <div id="text-body-footer">
+                    Thời trang chất lượng MyShop<br />
+                    Địa Chỉ : 170 An Dương Vương, TP Qui Nhơn<br />
+                    MST : 8081609803.<br />
+                    Ngày Cấp: 04/08/2010<br />
+                    Website : MyShop.vn<br />
+                    Email : sales.MyShop247@gmail.com<br />
+                    Hotline : 090.979.84.88<br />
+                    Thời trang nữ - Thời trang công sở fashion 2019<br />
+                    ® Bản quyền thuộc MyShop.vn<br />
+                </div>
+                <div id="contact-footer">
+                </div>
             </div>
         </div>
-        <div id="menu">
-            <ul>
-                <li><a href="#">GIỚI THIỆU</a></li>
-                <li><a href="#">ÁO</a>
-                    <ul>
-                        <li><a href="#">ÁO SƠ MI</a></li>
-                        <li><a href="#">ÁO KIỂU</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">ĐẦM</a>
-                    <ul>
-                        <li><a href="#">ĐẦM DẠO PHỐ</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">QUẦN</a>
-                    <ul>
-                        <li><a href="#">QUẦN SORT</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">CHÂN VÁY</a>
-                    <ul>
-                        <li><a href="#">VÁY NGẮN</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">SET BỘ</a>
-                    <ul>
-                        <li><a href="#">DẠO PHỐ</a></li>
-                        <li><a href="#">PHỐI YẾM</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">TIN TỨC</a></li>
-                <li><a href="#">LIÊN HỆ</a></li>
-            </ul>
-        </div>
-        <div id="main">
-            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-                main
-            </asp:ContentPlaceHolder>
-        </div>
-        <div id="clr"></div>
-        
-        <div id="footer">
-        </div>
-    </div>
     </form>
 </body>
 </html>
