@@ -53,10 +53,20 @@
                             <asp:CompareValidator ID="cvGia" runat="server" ControlToValidate="txtGia" ErrorMessage="*" ForeColor="Red" Operator="DataTypeCheck" Type="Double"></asp:CompareValidator>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td style="width: 889px">Loại:</td>
+                        <td style="width: 627px">
+                            <asp:DropDownList Class="text-sp" ID="ddlLoaiSP" runat="server" DataSourceID="SqlDataSource2" DataTextField="TENLOAI" DataValueField="MALOAI">
+                            </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:MyShopDatabase %>" SelectCommand="SELECT * FROM [LOAISANPHAM]"></asp:SqlDataSource>
+                        </td>
+                    </tr>
+
                     <tr>
                         <td style="width: 889px">Size:</td>
                         <td style="width: 627px">
-                            <asp:DropDownList CssClass="text-sp" ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="MASIZE" DataValueField="MASIZE">
+                            <asp:DropDownList Class="text-sp" ID="ddlSize" runat="server" DataSourceID="SqlDataSource1" DataTextField="MASIZE" DataValueField="MASIZE">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyShopDatabase %>" SelectCommand="SELECT [MASIZE] FROM [SIZE]"></asp:SqlDataSource>
                         </td>
@@ -70,11 +80,12 @@
                     </tr>
                     <tr>
                         <td style="width: 889px"></td>
-                        <td style="width: 627px"><asp:Button ID="btnThem" runat="server" Text="Thêm sản phẩm" /></td>
+                        <td style="width: 627px"><asp:Button Class="btn-them" ID="btnThem" runat="server" Text="Thêm sản phẩm" OnClick="btnThem_Click" /></td>
                     </tr>
                 </table>
             </div>
         </div>
+        <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label>
     </div>
 </asp:Content>
 

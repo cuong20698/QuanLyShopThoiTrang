@@ -104,4 +104,27 @@ public static class ConnectionClass
             conn.Close();
         }
     }
+
+    public static bool ThemSP(SanPham sanpham)
+    {
+        string query = "INSERT INTO SANPHAM VALUES(@ma,@ten,@hinhanh,@dvt,@sl,@gia,@maloai,@size,@mausac)";
+        try{
+            conn.Open();
+            cmd.CommandText = query;
+            cmd.Parameters.AddWithValue("ma", sanpham.masp);
+            cmd.Parameters.AddWithValue("ten", sanpham.tensp);
+            cmd.Parameters.AddWithValue("hinhanh", sanpham.hinhanh);
+            cmd.Parameters.AddWithValue("dvt", sanpham.dvt);
+            cmd.Parameters.AddWithValue("sl", sanpham.soluong);
+            cmd.Parameters.AddWithValue("gia", sanpham.dongia);
+            cmd.Parameters.AddWithValue("maloai", sanpham.maloai);
+            cmd.Parameters.AddWithValue("size", sanpham.size);
+            cmd.Parameters.AddWithValue("mausac", sanpham.mausac);
+            int result = cmd.ExecuteNonQuery();
+            return (result >= 1);
+        }
+        finally{
+            conn.Close();
+        }
+    }
 }

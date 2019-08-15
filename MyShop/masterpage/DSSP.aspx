@@ -7,7 +7,7 @@
             <h3>DANH SÁCH SẢN PHẨM</h3> 
             <div class="select">
                 <asp:Label ID="Label1" runat="server" Text="Chọn loại:"></asp:Label>
-                <asp:DropDownList class="gt-sl" ID="ddlLoai" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlLoai_SelectedIndexChanged" Style="height: 29px">
+                <asp:DropDownList Class="gt-sl" ID="ddlLoai" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlLoai_SelectedIndexChanged" Style="height: 29px">
                 </asp:DropDownList>
                
             </div>

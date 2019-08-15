@@ -1,19 +1,17 @@
 ﻿#contain-tsp{
     width:1000px;   
-    height:3000px;
 }
 .td-tsp h3{
     font-weight:bold;
     color:#00780f;
     width:800px;
     margin:auto;
-    padding:20px;
+    padding:10px;
     text-align:center;
 }
-.table-tsp table{
-    width:375px;
-    margin:auto;
-    height: 301px;
+.table-tsp table {
+    width: 375px;
+    margin: auto;
 }
 .table-tsp table td{
     line-height:30px;
@@ -23,4 +21,13 @@
     width:200px;
     border-bottom-right-radius:5px;
     border:1px solid #00780f;
+}
+.btn-them{
+    height:30px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-right-radius:5px;
+}
+.btn-them:hover{
+    background-color:#005f92;
+    color:white;
 }
