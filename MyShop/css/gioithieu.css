@@ -1,14 +1,14 @@
 ﻿#gt-body{
-    padding:0;
-    clear:both;
     width:1000px;
-    margin:100px auto 50px auto; 
-    border:1px solid #c0c0c0;
+    padding:45px;
+    margin:auto;
 }
 #text-gt-body{
     font-family:'Times New Roman', Times, serif;
-    margin:30px auto 40px auto;
+    padding:25px;
+    margin:auto;
     text-align:justify;
     width:800px;
     font-size:20px;
+    border:1px solid #808080;
 }

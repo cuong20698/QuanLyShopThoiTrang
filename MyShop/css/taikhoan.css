@@ -1,0 +1,26 @@
+﻿#contain-tk{
+    margin:0;
+    padding:0;
+    width:1000px;
+}
+.td-tk{
+    width:800px;
+    margin:auto;
+    color:#ff0000;
+    font-weight:bold;
+    padding:20px;
+    text-align:center;
+}
+.table-tk table{
+    width:1000px;
+    text-align:center;
+    background-color:#b6ff00;
+    margin:auto;
+    line-height:30px;
+}
+
+.table-tk table td{
+    border-left:1px solid #ffffff;
+    border-bottom:1px solid #ffffff;
+}
+

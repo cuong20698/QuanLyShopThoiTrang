@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyShop/MasterPage/MasterPage.master" AutoEventWireup="true" CodeFile="lienHe.aspx.cs" Inherits="MyShop_MasterPage_lienHe" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyShop/masterpage/MasterPage.master" AutoEventWireup="true" CodeFile="LienHe.aspx.cs" Inherits="MyShop_masterpage_LienHe" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <link href="../css/lienhe.css" rel="stylesheet" />
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <link href="../css/lienhe.css" rel="stylesheet" />
     <div id="lienhe">
         <div id="contain-lienhe">
             <div id="tieude-ct-lh">
@@ -38,7 +38,7 @@
                     <tr>
                         <td>&nbsp;</td>
                         <td>
-                            <asp:Button class="btn" ID="btnGui" runat="server" Text="Gửi" OnClick="btnGui_Click" />
+                            <asp:Button class="btn" ID="btnGui" runat="server" Text="Gửi"/>
                         </td>
                     </tr>
                 </table>

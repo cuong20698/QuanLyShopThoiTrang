@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyShop/MasterPage/MasterPage.master" AutoEventWireup="true" CodeFile="GioiThieu.aspx.cs" Inherits="MyShop_MasterPage_GioiThieu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MyShop/masterpage/MasterPage.master" AutoEventWireup="true" CodeFile="GioiThieu.aspx.cs" Inherits="MyShop_masterpage_GioiThieu" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <link href="../css/gioithieu.css" rel="stylesheet" />
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <link href="../css/gioithieu.css" rel="stylesheet" />
     <div id="gt-body">
         <div id="text-gt-body">
-            <asp:Label ID="Label1" runat="server" Text="GiỚI THIỆU" Font-Size="25" Font-Bold="True"></asp:Label><br />
+            <asp:Label ID="Label1" runat="server" Text="GIỚI THIỆU" Font-Size="25pt" Font-Bold="True"></asp:Label><br />
             <br />
             ĐÔI NÉT VỀ MyShop - Chuyên các mặt hàng thời trang mang lại nét quyến rũ 
         và thời trang cho giới trẻ.<br />

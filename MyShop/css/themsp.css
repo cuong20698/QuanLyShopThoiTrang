@@ -1,0 +1,26 @@
+﻿#contain-tsp{
+    width:1000px;   
+    height:3000px;
+}
+.td-tsp h3{
+    font-weight:bold;
+    color:#00780f;
+    width:800px;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+}
+.table-tsp table{
+    width:375px;
+    margin:auto;
+    height: 301px;
+}
+.table-tsp table td{
+    line-height:30px;
+}
+.text-sp{
+    height:20px;
+    width:200px;
+    border-bottom-right-radius:5px;
+    border:1px solid #00780f;
+}
