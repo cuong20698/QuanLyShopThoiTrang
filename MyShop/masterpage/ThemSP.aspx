@@ -82,8 +82,7 @@
                     </tr>
                 </table>
             </div>
+            <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label>
         </div>
-        <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label>
     </div>
 </asp:Content>
-

@@ -1,12 +1,11 @@
 ﻿#contain-dssp{
-    margin:0;
-    padding:0;
     width:1000px;
 }
 .td-dssp{
+    font-weight:bold;
+    color:#00780f;
     width:800px;
     margin:auto;
-    font-weight:bold;
     padding:10px;
     text-align:center;
 }
@@ -18,9 +17,6 @@
     margin-left:auto;
     margin-right:auto;
     width:500px;
-}
-.select label{
-    line-height:30px;
 }
 
 .gt-sl{
@@ -50,4 +46,8 @@
 
 .table-dssp table td{
     border:1px solid #ffffff;
+}
+
+.table-dssp table td img{
+    width:10%;
 }

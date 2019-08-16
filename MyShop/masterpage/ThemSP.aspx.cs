@@ -16,31 +16,35 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
         {
             loadLoaiSP();
             loadSize();
-        } 
+        }
     }
     private void themSP()
     {
         SanPham sanpham = laySanPham();
-        StringBuilder sb = new StringBuilder();
-        bool result = connect.ThemSP(sanpham);
-        if (result)
+        bool kiemtra = connect.KiemTraMaSP(sanpham.masp);
+        if (kiemtra)
         {
-            sb.Append(string.Format(@"
-            <script>
-                alert('Thêm thành công!');
-            </script>
-            "));
+            lblThongBao.Text = thongbao("Mã sản phẩm này đã tồn tại!").ToString();
         }
         else
         {
-            sb.Append(string.Format(@"
-            <script>
-                alert('Thêm không thành công!');
-            </script>
-            "));
+            bool result = connect.ThemSP(sanpham);
+            if (result)
+            {
+                lblThongBao.Text = thongbao("Thêm thành công!").ToString();
+            }
         }
+    }
 
-        lblThongBao.Text = sb.ToString();
+    public StringBuilder thongbao(string thongbao)
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append(string.Format(@"
+                <script type = 'text/javascript'>
+                    alert('{0}');
+                </script>
+                ",thongbao));
+        return sb;
     }
 
     private SanPham laySanPham()

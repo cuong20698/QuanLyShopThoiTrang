@@ -48,7 +48,7 @@ public partial class MyShop_masterpage_DSSP : System.Web.UI.Page
                 <td>" + i + @"</td>
                 <td>" + dt.Rows[i]["MASP"].ToString() + @"</td>
                 <td>" + dt.Rows[i]["TENSP"].ToString() + @"</td>
-                <td>" + dt.Rows[i]["HINHANH"].ToString() + @"</td>
+                <td><img src='../picture/" + dt.Rows[i]["HINHANH"] + @"'/></td>
                 <td>" + dt.Rows[i]["DONVITINH"].ToString() + @"</td>
                 <td>" + dt.Rows[i]["SOLUONG"].ToString() + @"</td>
                 <td>" + dt.Rows[i]["DONGIA"].ToString() + @"</td>
