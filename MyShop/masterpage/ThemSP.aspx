@@ -57,18 +57,16 @@
                     <tr>
                         <td style="width: 889px">Loại:</td>
                         <td style="width: 627px">
-                            <asp:DropDownList Class="text-sp" ID="ddlLoaiSP" runat="server" DataSourceID="SqlDataSource2" DataTextField="TENLOAI" DataValueField="MALOAI">
+                            <asp:DropDownList Class="text-sp" ID="ddlLoaiSP" runat="server" AutoPostBack="True">
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:MyShopDatabase %>" SelectCommand="SELECT * FROM [LOAISANPHAM]"></asp:SqlDataSource>
                         </td>
                     </tr>
 
                     <tr>
                         <td style="width: 889px">Size:</td>
                         <td style="width: 627px">
-                            <asp:DropDownList Class="text-sp" ID="ddlSize" runat="server" DataSourceID="SqlDataSource1" DataTextField="MASIZE" DataValueField="MASIZE">
+                            <asp:DropDownList Class="text-sp" ID="ddlSize" runat="server" AutoPostBack="True">
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:MyShopDatabase %>" SelectCommand="SELECT [MASIZE] FROM [SIZE]"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr>

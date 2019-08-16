@@ -24,10 +24,8 @@ public class SanPham
         this.dvt = dvt;
         this.soluong = soluong;
         this.dongia = dongia;
-        this.masp = maloai;
+        this.maloai = maloai;
         this.size = size;
         this.mausac = mausac;
 	}
-
-
 }
