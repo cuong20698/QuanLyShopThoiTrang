@@ -23,8 +23,8 @@
 .gt-sl{
     width:120px;
     line-height:30px;
+    height:30px;
     border-radius:10px;
-    -webkit-border-radius:10px;
     border:2px solid #009a87;
     font-weight:bold;
 

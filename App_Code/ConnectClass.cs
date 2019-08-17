@@ -65,4 +65,17 @@ public class ConnectClass
             return (result >= 1);
         }
     }
+
+    public bool XoaSP(string masp)
+    {
+        string query = "DELETE SANPHAM WHERE MASP = '"+masp+"'";
+        using(SqlConnection conn = new SqlConnection(connectString))
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int result = cmd.ExecuteNonQuery();
+            conn.Close();
+            return (result >= 1);
+        }
+    }
 }

@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
+using System.StubHelpers;
 public partial class MyShop_masterpage_DSSP : System.Web.UI.Page
 {
     ConnectClass connect = new ConnectClass();
@@ -54,13 +55,24 @@ public partial class MyShop_masterpage_DSSP : System.Web.UI.Page
                 <td>" + dt.Rows[i]["DONGIA"].ToString() + @"</td>
                 <td>" + dt.Rows[i]["SIZE"].ToString() + @"</td>
                 <td>" + dt.Rows[i]["MAUSAC"].ToString() + @"</td>
-                <td>" + i + @"</td>
+                <td>
+                    <a href = '?MaSP="+ dt.Rows[i]["MASP"].ToString() +@"'>Xóa</a>
+                    <a href = 'SuaSP.aspx?MaSP=" + dt.Rows[i]["MASP"].ToString() + @"'>Sửa</a>
+                </td>
             </tr>
             "));
         }
         lblDSSP.Text = sb.ToString();
+        if (Request.QueryString["MaSP"] != null)
+        {
+            bool result = connect.XoaSP(Request.QueryString["MaSP"]);
+            if (result)
+            {
+                Response.Redirect("DSSP.aspx");
+            }
+        }
     }
-    protected void ddlLoai_SelectedIndexChanged(object sender, EventArgs e)
+    protected void ddlLoai_SelectedIndexChanged1(object sender, EventArgs e)
     {
         loadDSSP();
     }
