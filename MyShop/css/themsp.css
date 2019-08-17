@@ -6,28 +6,31 @@
     color:#00780f;
     width:800px;
     margin:auto;
-    padding:10px;
+    padding:20px;
     text-align:center;
 }
 .table-tsp table {
-    width: 375px;
+    width: 500px;
     margin: auto;
+    font-size:20px;
 }
 .table-tsp table td{
-    line-height:30px;
+    line-height:50px;
 }
 .text-sp{
-    height:20px;
-    width:200px;
-    border-bottom-right-radius:5px;
+    height:30px;
+    width:250px;
+    border-bottom-right-radius:10px;
     border:1px solid #00780f;
 }
 .btn-them{
-    height:30px;
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-bottom-right-radius:5px;
+    height:40px;
+    font-weight:bold;
+    border-radius:5px;
+    margin:5px;
+    border:1px solid #00780f;
 }
 .btn-them:hover{
-    background-color:#005f92;
+    background-color:#00780f;
     color:white;
 }

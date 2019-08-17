@@ -26,8 +26,7 @@
                     <tr>
                         <td style="width: 889px">Hình ảnh:</td>
                         <td style="width: 627px">
-                            <asp:FileUpload ID="fUpload" runat="server" Width="200px" Height="20px" BorderColor="#00780f" BackColor="White"
-                                 />
+                            <asp:FileUpload Class="text-sp" ID="fUpload" runat="server" Font-Overline="True" />
                         </td>
                     </tr>
                     <tr>
