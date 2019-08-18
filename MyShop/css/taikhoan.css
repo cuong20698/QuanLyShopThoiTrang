@@ -32,7 +32,8 @@
 }
 .table-tk table td .img-tk{
     width:40%;
-    border:5px solid #808080;
+    border:3px solid #00780f;
+    border-radius:10px;
 }
 
 .table-tk table td .btn-tk{

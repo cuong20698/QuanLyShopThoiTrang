@@ -22,8 +22,8 @@
     margin:auto;
     line-height:40px;
 }
-.main-ssp table td{
-    
+.main-ssp table td{   
+     margin-left: 40px;
 }
 .text-ssp{
     height:30px;
@@ -37,7 +37,16 @@
     margin:auto;
     text-align:center;
 }
-
+.btnUpLoad{
+    height:30px;
+    border-radius:10px;
+    border:1px solid #00780f;
+    cursor:pointer;
+}
+.btnUpLoad:hover{
+    font-weight:bold;
+    color:#00780f;
+}
 .btnSua{
     height:40px;
     font-weight:bold;
@@ -52,4 +61,5 @@
 .imgSua{
     width:90%;
     border:2px solid #00780f;
+    border-radius:10px;
 }

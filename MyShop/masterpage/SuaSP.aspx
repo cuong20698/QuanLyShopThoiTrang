@@ -9,11 +9,11 @@
         <div class="main-ssp">
             <table>
                 <tr>
-                    <td rowspan="9" width="300px">
+                    <td rowspan="10" width="300px">
                         <asp:Image CssClass="imgSua" ID="imgSP" runat="server" /></td>
                     <td>Mã sản phẩm:</td>
                     <td>
-                        <asp:TextBox CssClass="text-ssp" ID="txtMaSP" runat="server" Text=""></asp:TextBox>
+                        <asp:TextBox CssClass="text-ssp" ID="txtMaSP" runat="server" Text="" ReadOnly="True"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -25,7 +25,8 @@
                 <tr>
                     <td>Hình ảnh:</td>
                     <td>
-                        <asp:FileUpload CssClass="text-ssp" ID="fUpload" runat="server" />
+                        <asp:DropDownList CssClass="text-ssp" ID="ddlUpAnh" runat="server" Width="150px"></asp:DropDownList>
+                        <asp:Button CssClass="btnUpLoad" ID="btnXemAnh" runat="server" Text="Xem trước" Width="100px" OnClick="btnXemAnh_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -66,11 +67,18 @@
                         <asp:TextBox CssClass="text-ssp" ID="txtMauSac" runat="server"></asp:TextBox>
                     </td>
                 </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Label ID="lblThongBao" runat="server" ForeColor="Red"></asp:Label>
+                    </td>
+                </tr>
             </table>
         </div>
         <div class="footer-ssp">
             <asp:Button CssClass="btnSua" ID="btnSua" runat="server" Text="Sửa sản phẩm" />
+            <asp:Button CssClass="btnSua" ID="btnBack" runat="server" Text="Trở về" Width="100px" OnClick="btnBack_Click" />
         </div>
     </div>
+    <asp:Label ID="lblBack" runat="server" Text=""></asp:Label>
 </asp:Content>
 

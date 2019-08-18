@@ -28,10 +28,21 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
         }
         else
         {
-            bool result = connect.ThemSP(sanpham);
-            if (result)
+            if (!fUpload.HasFile)
             {
-                lblThongBao.Text = thongbao("Thêm thành công!").ToString();
+                lblThongBao.Text = thongbao("Chưa chọn hình ảnh").ToString();
+            }
+            else
+            {
+                string imgname = fUpload.FileName;
+                string imgLink = Server.MapPath("/MyShop/picture/" + imgname);
+                fUpload.SaveAs(imgLink);
+
+                bool result = connect.ThemSP(sanpham);
+                if (result)
+                {
+                    lblThongBao.Text = thongbao("Thêm thành công!").ToString();
+                }
             }
         }
     }
@@ -52,7 +63,7 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
         string masp = txtMaSP.Text;
         string tensp = txtTenSP.Text;
         string hinhanh = fUpload.FileName;
-        string dvt = txtDVT.Text;
+        string dvt = txtDvt.Text;
         int soluong = int.Parse(txtSluong.Text);
         double dongia = Double.Parse(txtGia.Text);
         string maloai = ddlLoaiSP.SelectedValue;
@@ -79,9 +90,16 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
         ddlSize.DataValueField = ds.Tables[0].Columns["MASIZE"].ToString();
         ddlSize.DataSource = ds.Tables[0];
         ddlSize.DataBind();
-    }
-    protected void btnThem_Click(object sender, EventArgs e)
+    }   
+    protected void btnThem_Click1(object sender, EventArgs e)
     {
         themSP();
+    }
+    protected void btnUpFile_Click(object sender, EventArgs e)
+    {
+        if (fUpload.HasFile)
+        {
+            imgSP.ImageUrl = "~/MyShop/picture/"+fUpload.FileName;
+        }
     }
 }

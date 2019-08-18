@@ -9,19 +9,38 @@
     padding:20px;
     text-align:center;
 }
-.table-tsp table {
-    width: 500px;
-    margin: auto;
-    font-size:20px;
+.main-tsp{
+    width:800px;
+    margin:auto;
 }
-.table-tsp table td{
-    line-height:50px;
+.main-tsp table{
+    margin:auto;
+    line-height:40px;
 }
-.text-sp{
+.main-tsp table td{   
+     margin-left: 40px;
+}
+.text-tsp{
     height:30px;
     width:250px;
     border-bottom-right-radius:10px;
     border:1px solid #00780f;
+    padding:0 0 0 5px;
+}
+.footer-ssp{
+    width:800px;
+    margin:auto;
+    text-align:center;
+}
+.btnUpLoad{
+    height:30px;
+    border-radius:10px;
+    border:1px solid #00780f;
+    cursor:pointer;
+}
+.btnUpLoad:hover{
+    font-weight:bold;
+    color:#00780f;
 }
 .btn-them{
     height:40px;
@@ -33,4 +52,9 @@
 .btn-them:hover{
     background-color:#00780f;
     color:white;
+}
+.imgThem{
+    width:90%;
+    border:2px solid #00780f;
+    border-radius:10px;
 }
