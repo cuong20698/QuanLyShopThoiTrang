@@ -106,7 +106,7 @@
             <div class="footer-ssp">
                 <asp:Button CssClass="btn-them" ID="btnThem" runat="server" Text="Thêm sản phẩm" OnClick="btnThem_Click1" />
             </div>
-            <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label>
         </div>
+        <asp:Label ID="lblThongBao" runat="server" Text=""></asp:Label>
     </div>
 </asp:Content>

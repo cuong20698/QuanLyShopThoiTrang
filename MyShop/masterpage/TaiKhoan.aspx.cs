@@ -13,8 +13,7 @@ public partial class MyShop_masterpage_TaiKhoan : System.Web.UI.Page
     ConnectClass connect = new ConnectClass();
     protected void Page_Load(object sender, EventArgs e)
     {
-        
-        if (!IsPostBack)
+        if(Session["username"] != null)
         {
             LoadTK();
         }
@@ -22,7 +21,7 @@ public partial class MyShop_masterpage_TaiKhoan : System.Web.UI.Page
 
     private void LoadTK()
     {
-        string query = "SELECT * FROM QUANLY WHERE TAIKHOAN = 'admin'";
+        string query = "SELECT * FROM QUANLY WHERE TAIKHOAN = '"+Session["username"].ToString()+"'";
         DataTable dt = connect.LoadDataTable(query);
         txtTaiKhoan.Text = dt.Rows[0]["TAIKHOAN"].ToString();
         txtHoTen.Text = dt.Rows[0]["HOTEN"].ToString();

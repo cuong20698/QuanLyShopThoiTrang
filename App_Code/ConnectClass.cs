@@ -90,4 +90,17 @@ public class ConnectClass
             return (result >= 1);
         }
     }
+
+    public bool Login(string username, string password)
+    {
+        string query = "SELECT COUNT(*) FROM QUANLY WHERE TAIKHOAN = '" + username + "' AND MATKHAU = '" + password + "'";
+        using (SqlConnection conn = new SqlConnection(connectString))
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int result = (int)cmd.ExecuteScalar();
+            conn.Close();
+            return (result >= 1);
+        }
+    }
 }

@@ -9,7 +9,10 @@ public partial class MyShop_masterpage_Admin : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if(Session["username"] == null)
+        {
+            Response.Redirect("DangNhap.aspx");
+        }
     }
     protected void btnLogout_Click(object sender, EventArgs e)
     {
