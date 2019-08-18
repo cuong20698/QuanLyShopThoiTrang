@@ -90,10 +90,20 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
         ddlSize.DataValueField = ds.Tables[0].Columns["MASIZE"].ToString();
         ddlSize.DataSource = ds.Tables[0];
         ddlSize.DataBind();
-    }   
+    }
+    private void XoaForm()
+    {
+        txtMaSP.Text = "";
+        txtTenSP.Text = "";
+        txtSluong.Text = "";
+        txtGia.Text = "";
+        txtDvt.Text = "";
+        txtMauSac.Text = "";
+    }
     protected void btnThem_Click1(object sender, EventArgs e)
     {
         themSP();
+        XoaForm();
     }
     protected void btnUpFile_Click(object sender, EventArgs e)
     {
