@@ -75,10 +75,9 @@
             </table>
         </div>
         <div class="footer-ssp">
-            <asp:Button CssClass="btnSua" ID="btnSua" runat="server" Text="Sửa sản phẩm" />
+            <asp:Button CssClass="btnSua" ID="btnSua" runat="server" Text="Sửa sản phẩm" OnClick="btnSua_Click" />
             <asp:Button CssClass="btnSua" ID="btnBack" runat="server" Text="Trở về" Width="100px" OnClick="btnBack_Click" />
         </div>
     </div>
-    <asp:Label ID="lblBack" runat="server" Text=""></asp:Label>
-</asp:Content>
+    </asp:Content>
 

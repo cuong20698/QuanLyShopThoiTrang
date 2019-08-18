@@ -13,11 +13,9 @@ public partial class MyShop_masterpage_SuaSP : System.Web.UI.Page
     ConnectClass connect = new ConnectClass();
     protected void Page_Load(object sender, EventArgs e)
     {
-
-        loadSP();
-
         if (!IsPostBack)
         {
+            loadSP();
             loadDSAnh();
             loadLoaiSP();
             loadSize();
@@ -90,5 +88,28 @@ public partial class MyShop_masterpage_SuaSP : System.Web.UI.Page
     protected void btnBack_Click(object sender, EventArgs e)
     {
         Response.Redirect("DSSP.aspx");
+    }
+    protected void btnSua_Click(object sender, EventArgs e)
+    {
+        chinhsuaSP();
+    }
+
+    private void chinhsuaSP()
+    {
+        SanPham sanpham = laySanPham();
+        string query = @"UPDATE SANPHAM SET TENSP = N'"+ sanpham.tensp + @"', 
+                                            HINHANH = N'"+sanpham.hinhanh + @"',
+                                            DONVITINH = N'" + sanpham.dvt + @"',
+                                            SOLUONG = " + sanpham.soluong + @",
+                                            DONGIA = " + sanpham.dongia + @",
+                                            MALOAI = '" + sanpham.maloai + @"',
+                                            SIZE = '" + sanpham.size + @"',
+                                            MAUSAC = N'" + sanpham.mausac + @"'
+                         WHERE MASP = '" + sanpham.masp + @"'";
+        bool result = connect.SuaSP(query);
+        if (result)
+        {
+            Response.Redirect("DSSP.aspx");
+        }
     }
 }
