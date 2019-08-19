@@ -22,15 +22,15 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
     {
         SanPham sanpham = laySanPham();
         bool kiemtra = connect.KiemTraMaSP(sanpham.masp);
-        if (kiemtra)
+        if (!fUpload.HasFile)
         {
-            lblThongBao.Text = thongbao("Mã sản phẩm này đã tồn tại!").ToString();
+            lblThongBao.Text = thongbao("Chưa chọn hình ảnh").ToString();
         }
         else
         {
-            if (!fUpload.HasFile)
+            if (kiemtra)
             {
-                lblThongBao.Text = thongbao("Chưa chọn hình ảnh").ToString();
+                lblThongBao.Text = thongbao("Mã sản phẩm này đã tồn tại!").ToString();
             }
             else
             {
@@ -42,6 +42,7 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
                 if (result)
                 {
                     lblThongBao.Text = thongbao("Thêm thành công!").ToString();
+                    XoaForm();
                 }
             }
         }
@@ -54,7 +55,7 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
                 <script type = 'text/javascript'>
                     alert('{0}');
                 </script>
-                ",thongbao));
+                ", thongbao));
         return sb;
     }
 
@@ -103,13 +104,12 @@ public partial class MyShop_masterpage_ThemSP : System.Web.UI.Page
     protected void btnThem_Click1(object sender, EventArgs e)
     {
         themSP();
-        XoaForm();
     }
     protected void btnUpFile_Click(object sender, EventArgs e)
     {
         if (fUpload.HasFile)
         {
-            imgSP.ImageUrl = "~/MyShop/picture/"+fUpload.FileName;
+            imgSP.ImageUrl = "~/MyShop/picture/" + fUpload.FileName;
         }
     }
 }

@@ -103,4 +103,16 @@ public class ConnectClass
             return (result >= 1);
         }
     }
+
+    public bool getQuery(string query)
+    {
+        using(SqlConnection conn = new SqlConnection(connectString))
+        {
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int result = cmd.ExecuteNonQuery();
+            conn.Close();
+            return (result >= 1);
+        }
+    }
 }

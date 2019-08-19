@@ -1,0 +1,50 @@
+﻿#contain-doimk {
+    width: 1000px;
+    margin:auto;
+}
+
+#header-doimk h3 {
+    width: 800px;
+    margin: auto;
+    color: #00780f;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
+#main-doimk{
+   
+}
+#main-doimk table{
+    width:500px;
+    margin:0 auto 0 auto;
+}
+#main-doimk table tr{
+    height:40px;
+}
+#main-doimk table td .txtDoiMK {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #00780f;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 5px;
+}
+
+#footer-doimk{
+    width:800px;
+    margin:auto;
+    text-align:center;
+}
+#footer-doimk .btnDoiMK{
+    height:40px;
+    width:100px;
+    font-weight:bold;
+    border-radius:5px;
+    margin:5px;
+    border:1px solid #00780f;
+}
+
+#footer-doimk .btnDoiMK:hover{
+    background-color:#00780f;
+    color:#ffffff;
+}

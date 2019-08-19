@@ -28,7 +28,7 @@
                     <li><a href="SanPham.aspx?loai=MSPA">ÁO</a></li>
                     <li><a href="SanPham.aspx?loai=MSPD">ĐẦM</a></li>
                     <li><a href="SanPham.aspx?loai=MSPQ">QUẦN</a></li>
-                    <li><a href="SanPham.aspx?loai=MSPV">CHÂN VÁY</a></li>
+                    <li><a href="SanPham.aspx?loai=MSPV">VÁY</a></li>
                     <li><a href="SanPham.aspx?loai=MSPS">SET BỘ</a></li>
                     <li><a href="#">TIN TỨC</a></li>
                     <li><a href="LienHe.aspx">LIÊN HỆ</a></li>

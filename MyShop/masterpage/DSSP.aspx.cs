@@ -56,7 +56,7 @@ public partial class MyShop_masterpage_DSSP : System.Web.UI.Page
                 <td>" + dt.Rows[i]["SIZE"].ToString() + @"</td>
                 <td>" + dt.Rows[i]["MAUSAC"].ToString() + @"</td>
                 <td>
-                    <a href = '?MaSP="+ dt.Rows[i]["MASP"].ToString() +@"'>Xóa</a>
+                    <a onClick='alert('cgfhhgfty');' href = '?MaSP=" + dt.Rows[i]["MASP"].ToString() + @"'>Xóa</a>
                     <a href = 'SuaSP.aspx?MaSP=" + dt.Rows[i]["MASP"].ToString() + @"'>Sửa</a>
                 </td>
             </tr>

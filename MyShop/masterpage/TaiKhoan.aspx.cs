@@ -30,4 +30,8 @@ public partial class MyShop_masterpage_TaiKhoan : System.Web.UI.Page
         txtDiaChi.Text = dt.Rows[0]["DIACHI"].ToString();
         imgTK.ImageUrl = "~/MyShop/picture/imgTK.jpg";
     }
+    protected void btnDMK_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("DoiMK.aspx");
+    }
 }

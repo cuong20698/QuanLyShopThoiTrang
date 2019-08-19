@@ -48,7 +48,7 @@
                 <tr>
                     <td align="center" colspan="2">
                         <asp:Button CssClass="btn-tk" ID="btnSua" runat="server" Text="Chỉnh sửa thông tin" />
-                        <asp:Button CssClass="btn-tk" ID="btnDMK" runat="server" Text="Đổi mật khẩu" />                        
+                        <asp:Button CssClass="btn-tk" ID="btnDMK" runat="server" Text="Đổi mật khẩu" OnClick="btnDMK_Click" />                        
                     </td>
                 </tr>
             </table>

@@ -1,0 +1,55 @@
+﻿#contain-sp {
+    width: 1200px;
+    margin: auto;
+}
+
+#header-sp {
+    height: 100px;
+}
+
+.td-sp {
+    width: 450px;
+    margin: 0 0 0 50px;
+    float: left;
+    height: 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.label {
+    float: left;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.lblSP {
+    font-size: 25px;
+}
+
+.td-sp2 {
+    width: 450px;
+    float: left;
+    height: 30px;
+    margin: 0 50px 0 0;
+    border-bottom: 1px solid #000000;
+}
+
+.abc {
+    height: 30px;
+}
+
+#main-sp {
+    width: 900px;
+    margin: auto;
+}
+
+.table-sp {
+    width: 300px;
+}
+
+.table-sp td .img-sp {
+    width:100px;
+    border: 2px solid #00780f;
+    border-radius: 10px;
+}

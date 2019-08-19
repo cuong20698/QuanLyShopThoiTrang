@@ -28,4 +28,9 @@
             </table>
         </div>
     </div>
+    <script>
+        function confirm() {
+            return confirm("Bạn có chắc chắn xóa sản phẩm này!");
+        }
+    </script>
 </asp:Content>
