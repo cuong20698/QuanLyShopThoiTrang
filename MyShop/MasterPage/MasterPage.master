@@ -12,10 +12,6 @@
 <body>
     <form id="form1" runat="server">
         <div id="mainWap">
-            <div id="logout">
-                <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
-                <asp:Button ID="btnLogout" runat="server" Text="Đăng xuất" OnClick="btnLogout_Click" />
-            </div>
             <div id="header">
                 <div id="logo">MyShop</div>
                 <div id="store">
@@ -29,36 +25,57 @@
             <div id="menu">
                 <ul>
                     <li><a href="GioiThieu.aspx">GIỚI THIỆU</a></li>
-                    <li><a href="#">ÁO</a></li>
-                    <li><a>ĐẦM</a></li>
-                    <li><a>QUẦN</a></li>
-                    <li><a>CHÂN VÁY</a></li>
-                    <li><a>SET BỘ</a></li>
+                    <li><a href="SanPham.aspx?loai=MSPA">ÁO</a></li>
+                    <li><a href="SanPham.aspx?loai=MSPD">ĐẦM</a></li>
+                    <li><a href="SanPham.aspx?loai=MSPQ">QUẦN</a></li>
+                    <li><a href="SanPham.aspx?loai=MSPV">CHÂN VÁY</a></li>
+                    <li><a href="SanPham.aspx?loai=MSPS">SET BỘ</a></li>
                     <li><a href="#">TIN TỨC</a></li>
                     <li><a href="LienHe.aspx">LIÊN HỆ</a></li>
                 </ul>
             </div>
             <div id="main">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                    <div id="divInfo" runat="server"></div>
                 </asp:ContentPlaceHolder>
             </div>
             <div id="clr"></div>
 
             <div id="footer">
                 <div id="text-body-footer">
-                    Thời trang chất lượng MyShop<br />
-                    Địa Chỉ : 170 An Dương Vương, TP Qui Nhơn<br />
-                    MST : 8081609803.<br />
-                    Ngày Cấp: 04/08/2010<br />
-                    Website : MyShop.vn<br />
-                    Email : sales.MyShop247@gmail.com<br />
-                    Hotline : 090.979.84.88<br />
-                    Thời trang nữ - Thời trang công sở fashion 2019<br />
-                    ® Bản quyền thuộc MyShop.vn<br />
+                    <h3>MYSHOP</h3>
+                    <p>
+                        Thời trang chất lượng MyShop<br />
+                        Địa Chỉ : 170 An Dương Vương, TP Qui Nhơn<br />
+                        MST : 8081609803.<br />
+                        Ngày Cấp: 04/08/2010<br />
+                        Website : MyShop.vn<br />
+                        Email : sales.MyShop247@gmail.com<br />
+                        Hotline : 090.979.84.88<br />
+                        Thời trang nữ - Thời trang công sở fashion 2019<br />
+                    </p>
+                </div>
+                <div id="link-footer">
+                    <h3>LIÊN KẾT</h3>
+                    <ul>
+                        <li><a href="GioiThieu.aspx">GIỚI THIỆU</a></li>
+                        <li><a href="SanPham.aspx?loai=MSPA">ÁO</a></li>
+                        <li><a href="SanPham.aspx?loai=MSPD">ĐẦM</a></li>
+                        <li><a href="SanPham.aspx?loai=MSPQ">QUẦN</a></li>
+                        <li><a href="SanPham.aspx?loai=MSPV">CHÂN VÁY</a></li>
+                        <li><a href="SanPham.aspx?loai=MSPS">SET BỘ</a></li>
+                        <li><a href="#">TIN TỨC</a></li>
+                        <li><a href="LienHe.aspx">LIÊN HỆ</a></li>
+                    </ul>
                 </div>
                 <div id="contact-footer">
+                    <h3>LIÊN HỆ:</h3>
+                    <div id="imgfooter">
+                        <img src="../picture/map-lienhe.PNG" />
+                    </div>
                 </div>
+            </div>
+            <div id="bottom-footer">
+                <h4>® Bản quyền thuộc MyShop.vn</h4>
             </div>
         </div>
     </form>

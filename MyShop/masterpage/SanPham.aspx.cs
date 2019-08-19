@@ -11,6 +11,7 @@ public partial class MyShop_masterpage_SanPham : System.Web.UI.Page
     ConnectClass connect = new ConnectClass();
     protected void Page_Load(object sender, EventArgs e)
     {
+        Label1.Text = Request.QueryString["loai"].ToString();
         if (!IsPostBack)
         {
             loadDataList();
@@ -19,10 +20,10 @@ public partial class MyShop_masterpage_SanPham : System.Web.UI.Page
     }
     public void loadDataList()
     {
-        dtlTK.RepeatColumns = 5;
-        string query = "SELECT * FROM SANPHAM";
-        DataSet ds = connect.LoadDataSet(query);
-        dtlTK.DataSource = ds.Tables[0];
-        dtlTK.DataBind();
+        //dtlTK.RepeatColumns = 5;
+        //string query = "SELECT * FROM SANPHAM";
+        //DataSet ds = connect.LoadDataSet(query);
+        //dtlTK.DataSource = ds.Tables[0];
+        //dtlTK.DataBind();
     }
 }

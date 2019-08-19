@@ -30,8 +30,8 @@
 .txt{
     width:300px;
     height:40px;
-    -moz-border-radius:0px;
-    -webkit-border-radius:5px;
+    border-radius:5px;
+    border:1px solid #808080;
 }
 .btn{
     height:50px;

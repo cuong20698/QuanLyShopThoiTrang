@@ -8,84 +8,70 @@ body{
 #mainWap{
     min-height:100%;
     width:1200px;
-    height:auto;height:100%;
+    height:100%;
     margin:0 auto;
-}
-#logout{
-    width:1200px;
-    height:auto;
-    text-align:right;
-    background-color:#ffd800;
-}
-#btnLogout{
-    margin:10px 10px;
-    width:80px;
-    height:30px;
-    font-weight:bold;
-    color:white;
-    background-color:#000000;
-    border:0px;
-    -webkit-border-radius:5px;
-}
-#lblUser{
-    margin:10px 2px;
-    height:30px;
-    color:#ff0000;
-}
-#btnLogout:hover{
-    background-color:#ff0000;
-    color:white;
 }
 #header{
     height:200px;
-    background-color:#ffd800;
+    background-image: url('../picture/bannerbanhang.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:right;
 }
 #logo{
     float:left;
-    width:700px;
+    width:780px;
     font-family:'Times New Roman', Times, serif;
     color:#000000;
-    font-size:150px;
+    font-size:120px;
     line-height:200px;
-    margin-left:10px;
+    text-align:right;
 }
 #store a{
     float:left;
     text-decoration:none;
-    margin:90px 0 0 250px;
     color:#000000;
+    width:250px;
+    text-align:right;
+    padding:100px 0 0 0;
 }
 #store a:hover{
     color:#ff0000;
 }
 #search{
     float:left;
-    margin:90px 0 0 10px;
     display:table;
     content:"";
+    width:160px;
+    height:200px;
+    text-align:right; 
 }
 #btnSearch{
-    margin-left:0;
+    margin:100px 0 0 0;
     font-size:100%;
     border: none;
     cursor:pointer; 
-    background-color:#ffd800;
+    background-color:#69C8CE;
 }
 
 #txtSearch{
     background-color:#000000;
     color:white;
     width:120px;
+    border:none;
+    height:20px;
+    padding:2px;
+    border-radius:4px;
 }
 #menu{
     margin:0px;
     padding:0px;
     color:white;
 }
-ul{
+#menu ul{
     list-style:none;
 }
-ul li{
+#menu ul li{
     float:left;
     background-color:#000000;
     width:150px;    
@@ -95,13 +81,13 @@ ul li{
     font-size:15px;
     text-align:center;
 }
-ul li a{
+#menu ul li a{
     text-decoration:none;
     color:white;
     display:block;
 }
-ul li a:hover{
-    background-color:#cfcfcf;
+#menu ul li a:hover{
+    background-color:#ffd800;
     color:#000000;
     font-weight:bold;
 }
@@ -124,15 +110,53 @@ ul li:hover ul li{
 
 #footer{
     height:300px;
-    background-color:#ffd800;
+    background-color:#69C8CE;
 }
 #text-body-footer{
     float:left;
+    margin:30px 0 0 20px;
+}
+#text-body-footer p{
+    margin:20px 0 0 0;
     line-height:25px;
-    margin:40px 0 0 40px;
+    font-weight:bold;
+    font-size:20px;
+}
+#link-footer{
+    float:left;
+    width:260px;
+    margin:30px 0 0 50px;
+}
+#link-footer ul{
+    margin:20px 0 0 50px;
+}
+#link-footer ul li a{
+    text-decoration:none;
+    color:#000000;
+    line-height:25px;
     font-weight:bold;
 }
-#contact img{
-    font-size:5%;
-    background-color:black;    
+#link-footer ul li a:hover{
+    color:#ad4d00;
+}
+
+#contact-footer{
+    float:left;
+    width:300px;
+    height:280px;
+    margin:30px 0 0 0;
+}
+#imgfooter{
+}
+#imgfooter img{
+    margin:20px 0 0 0;
+    width:450px;
+    border-radius:5px;
+    border:1px solid #69C8CE;
+}
+#bottom-footer{
+    background-color:#000000;
+    color:white;
+    text-align:center;
+    height:20px;
 }

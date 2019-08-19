@@ -20,7 +20,7 @@
         ra những sản phẩm tốt hơn khiến người mặc hài lòng.<br />
             <br />
 
-            Ngoài ra, MySHop - Chuyên các mặt hàng thời trang mang lại
+            Ngoài ra, MyShop - Chuyên các mặt hàng thời trang mang lại
          nét quyến rũ và thời trang cho giới trẻ còn không ngừng phát triển về mảng thời
          trang dạ hội, với những mẫu váy đầm ôm dáng, quyến rũ với phương châm ” tôn lên
          nét duyên dáng của người phụ nữ ở bất cứ nơi đâu họ xuất hiện”.<br />
